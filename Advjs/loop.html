@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tree</title>
+    </head>
+    <body>
+        <h1>We are learning Js</h1>
+        <h1>Go First</h1>
+        <h2>Looking Forward</h2>
+        <p id="prem">
+            New Era<span>Hello</span><em>Hi</em> <span>Nice</span>
+        </p>
+        <p id="nice">
+            <span>Guys</span>End Era
+        </p>
+        <div>
+            <p>First paragraph</p>
+            <p>Second paragraph</p>
+
+        </div>
+
+        <script>
+            // loop
+            var len = document.getElementsByTagName("p").length;
+            console.log(len);
+
+            for (let i = 0; i < len; i++) {
+                var output = document.getElementsByTagName("p")[i];
+            }
+            document.write(output + "<br>");
+            console.log(output);
+        </script>
+    </body>
+</html>
