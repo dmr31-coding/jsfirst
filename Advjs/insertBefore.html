@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html id="pailo">
+    <head>
+        <meta charset="UTF-8" />
+        <title class="prem">Tree</title>
+    </head>
+    <body id="meroid">
+ 
+        <div>
+            <h1>JS Framework</h1>
+            <ul id="myul">
+                <li>JQery</li>
+                <li id="myajax">Ajax</li>
+                <li>React JS</li>
+                <li id="mynext">Next JS</li>
+
+            </ul>
+        </div>
+ 
+ 
+        <script>
+            // parentNode.insertBefore(newNode, refrenceNode)
+            // insert new element
+
+            // accessing parentNode
+            var parentNode = document.getElementById("myul");
+
+            // creating new li element
+            var newNode = document.createElement("li");
+
+            //adding text using textContent to the new node
+            newNode.textContent = "Vue JS";
+
+            //accessing refrence node
+            var refNode = document.getElementById("myajax");
+
+            //Insert new element
+            parentNode.insertBefore(newNode, refNode);
+            console.log(parentNode);
+        </script>
+    </body>
+</html>

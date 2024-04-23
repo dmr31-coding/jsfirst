@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html id="pailo">
+    <head>
+        <meta charset="UTF-8" />
+        <title class="prem">Tree</title>
+    </head>
+    <body id="meroid">
+ 
+        <div id="meroclass">
+            <h1 id="myh1">We are learning Js</h1>
+            <h2>heading2</h2>
+        </div>
+ 
+ 
+        <script>
+            // Targeting elemennt where we will append new nodes
+            var targetNode = document.getElementById("meroclass");
+
+            // creating and append new text
+            targetNode.appendChild(document.createTextNode("Hello"));
+
+            // creating and append new text
+            targetNode.appendChild(document.createTextNode("my name is"));
+
+            // creating and append new text
+            targetNode.appendChild(document.createTextNode("Akhabar"));
+
+            targetNode.normalize();
+
+            console.log(targetNode.childNodes);
+        </script>
+    </body>
+</html>

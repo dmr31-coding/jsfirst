@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html id="pailo">
+    <head>
+        <meta charset="UTF-8" />
+        <title class="prem">Tree</title>
+    </head>
+    <body id="meroid">
+ 
+        <div id="meroclass">
+            <h1 id="myh1">We are learning Js</h1>
+            <h2>heading2</h2>
+        </div>
+ 
+ 
+        <script>
+            // creating Empty doc fragment
+            var df = document.createDocumentFragment();
+
+            // creating new element h3
+            var hNode = document.createElement("h3");
+
+            // creating new element p
+            var pNode = document.createElement("p");
+
+            //text for new h3 and p element
+            hNode.textContent = "h3 from js";
+            pNode.textContent = "p from js";
+
+            console.log(hNode);
+            console.log(pNode);
+
+            //appending nodes to DF
+            df.appendChild(hNode);
+            df.appendChild(pNode);
+
+            var targetNode = document.getElementById("meroclass");
+
+            //append Df to div
+            targetNode.appendChild(df);
+            console.log(df);
+        </script>
+    </body>
+</html>
