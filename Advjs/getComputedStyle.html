@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html id="pailo">
+    <head>
+        <meta charset="UTF-8" />
+        <title class="prem">Tree</title>
+        <style>
+            .myclass1 {
+                font-style: italic;
+                font-size: 80px;
+            }
+
+        </style>
+    </head>
+    <body id="meroid">
+ 
+        <p id="myp" class="myclass1" style="color:yellowgreen;">paragraph</p>
+
+        <script>
+            var p = document.getElementById("myp");
+            var allCssProp = window.getComputedStyle(p);// read only and all type of css support
+            console.log(allCssProp);
+        </script>
+    </body>
+</html>

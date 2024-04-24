@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title class="prem">Yes</title>
+    </head>
+    <body>
+        <table border="1" id="mytab">
+            <caption>Mero Table Caption</caption>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Course</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Raj</td>
+                    <td>JS</td>
+
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sita</td>
+                    <td>JQuery</td>
+
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>4</td>
+                    <td>Satya</td>
+                    <td>Python</td>
+
+                </tr>
+            </tfoot>
+        </table>
+
+        <script>
+            var table = document.getElementById("mytab");
+            var tCap = table.caption;
+            tCap.innerHTML = "New Caption";
+            document.write(tCap.innerHTML + "<br>");
+        </script>
+    </body>
+</html>

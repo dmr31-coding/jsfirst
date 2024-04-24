@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html id="pailo">
+    <head>
+        <meta charset="UTF-8" />
+        <title class="prem">Tree</title>
+    </head>
+    <body id="meroid">
+ 
+ 
+        <ul id="myul">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+ 
+        </ul>
+
+        <div id="mydiv"></div>
+ 
+ 
+        <script>
+            //targetNode.cloneNode(deep) where deep = true or false
+
+            var u = document.getElementById("myul");
+            var duplicateNode = u.cloneNode(true);
+            var div = document.getElementById("mydiv");
+            div.appendChild(duplicateNode);
+            console.log(div);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html id="pailo">
+    <head>
+        <meta charset="UTF-8" />
+        <title class="prem">Tree</title>
+    </head>
+    <body id="meroid">
+ 
+        <div id="mydiv">
+            <h1 id="my1">JS Framework</h1>
+            <h1 id="my2">Python Framework Framework</h1>
+            <h1 id="my3">Java Framework</h1>
+ 
+        </div>
+ 
+ 
+        <script>
+            // targetNode.insertAdjacentElement("position", element)
+            // position : beforebegin | afterbegin | beforeend | afterend
+            var parentNode = document.getElementById("mydiv");
+            var h = document.getElementById("my2");
+            var newEle = document.createElement("span");
+            newEle.textContent = "This is span";
+            h.insertAdjacentElement("beforebegin", newEle);
+            console.log(parentNode);
+        </script>
+    </body>
+</html>
