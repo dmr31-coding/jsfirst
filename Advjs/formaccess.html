@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="" name="myform">
+            Username:
+            <input type="text" name="my_username_field">
+            <br>
+            <br>
+            Password:
+            <input type="submit" name="my_username_field">
+            <br>
+            <br>
+            <input type="submit" name="submitbtn" value="Submit">
+            <br>
+            <br>
+        </form>
+        <hr>
+        <hr>
+        <form action="" name="yourform">
+            Username:
+            <input type="text" name="your_username_field">
+            <br>
+            <br>
+            Password:
+            <input type="submit" name="your_password_field">
+            <br>
+            <br>
+            <input type="submit" name="submitbtn1" value="Submit">
+            <br>
+            <br>
+        </form>
+
+        <script>
+            // with name attribute using square bracket
+            var form = document.forms['myform'];
+            console.log(form);
+        </script>
+    </body>
+</html>
