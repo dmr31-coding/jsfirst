@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exception</title>
+    </head>
+    <body>
+        <h1>Exception Handling</h1>
+        <script>
+            try {
+                add();
+                document.write("Skipped code");
+            } catch (e) {
+                //document.write("Mseeage: " + e.message + "<br>");
+                //document.write("Name: " + e.name + "<br>");
+                //document.write("Stack: " + e.stack + "<br>");
+                document.write("Add defined vako xaina <br>")
+
+            } finally {
+                document.write("This is the block where code should be executed <br>");
+            }
+        </script>
+        <script>
+            function getRectArea(w, h) {
+                if (isNaN(w) || isNaN(h)) {
+                    throw "Parameter is not a number";
+                }
+            }
+            try {
+                getRectArea(10, 'B');
+            } catch (e) {
+                document.write(e);
+            }
+            document.write("<br> <br> I have no idea whats goin on");
+        </script>
+    </body>
+</html>

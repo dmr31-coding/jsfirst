@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Callback fun</title>
+    </head>
+    <body>
+        <script>
+            //callback example
+            function show(a) {
+                console.log("I am show function" + a)
+            }
+
+            function apply(callback) {
+                var a = 10;
+                callback(a);
+            }
+
+            apply(show);
+
+            //synchronous example-execute at last do wait for all
+            function show(a) {
+                console.log("I am show function" + a)
+            }
+
+            function apply(callback) {
+                var a = 10;
+                callback(a);
+            }
+
+            apply(show);
+            console.log("End");
+
+            //asynchronous example-no wait to execute and remain execute at last 
+            setTimeout(function show() {
+                console.log("I am show function");
+            }, 5000);
+
+            console.log("End");
+        </script>
+    </body>
+</html>

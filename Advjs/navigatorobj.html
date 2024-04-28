@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StrictMode</title>
+</head>
+<body>
+    <h1>Strict Mode</h1>
+    <script>
+        console.dir(navigator);
+        console.log(navigator.userAgent);
+        console.log(navigator.cookieEnabled);
+
+        if (navigator.cookieEnabled) {
+            document.write("Cookies enabled.");
+        } else {
+            document.write("Cookies disabled");
+        }
+    </script>
+
+</body>
+</html>
