@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //callback use garda better yesle setTimeout ko time wait garnu pardaina
+            //but callback complex haru ma use garda nested garnuparxa means dependent hunxa which leads to complexity to avoid we use promise concept
+
+            function getName(name, callback) {
+                setTimeout(() => {
+                    console.log("Inside settimeout")
+                    callback(name);
+                }, 2000)
+            }
+
+            const nm = getName('Sonam', (nm) => {
+                console.log(nm)
+            })
+
+            console.log("End");
+        </script>
+    </body>
+</html>

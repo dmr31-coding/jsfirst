@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MapMethod</title>
+    </head>
+    <body>
+        <h1>Object destructuring</h1>
+        <script>
+            var course = {
+                courseName: "JS",
+                duration: "OneMonths",
+                tutor: "Youtube"
+            };
+
+            function show({
+                courseName,
+                duration,
+                tutor
+            }) {
+                console.log(courseName);
+                console.log(duration);
+                console.log(tutor);
+            }
+            show(course);
+        </script>
+    </body>
+</html>

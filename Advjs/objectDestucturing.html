@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MapMethod</title>
+    </head>
+    <body>
+        <h1>Object destructuring</h1>
+        <script>
+            //array destructuring use []
+            //obj destructuring use {}
+            var course = {
+                courseName: "JS",
+                duration: "OneMonths",
+                tutor: "Youtube"
+            };
+
+            var { courseName, duration, tutor } = course;
+            console.log(courseName);
+            console.log(duration);
+            console.log(tutor);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MapMethod</title>
+    </head>
+    <body>
+        <h1>Array destructurin on function</h1>
+        <script>
+            var ar = ["JS", "OneMonths", "Youtube", "time"];
+
+            function show([courseName, duration, ...rest]) {
+                console.log(courseName);
+                console.log(duration);
+                console.log(rest);
+            }
+            show(ar);
+        </script>
+    </body>
+</html>
